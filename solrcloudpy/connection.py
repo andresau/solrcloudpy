@@ -49,6 +49,8 @@ class SolrConnection(object):
     :type version: str
     :param request_retries: number of times to retry a request against the same server. particularly useful for load-balancing or proxy situations.
     :type request_retries: int
+    :param use_https: True if https is required
+    :type use_https: bool
     """
 
     def __init__(self, server="localhost:8983",
